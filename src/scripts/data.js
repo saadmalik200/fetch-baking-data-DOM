@@ -52,7 +52,8 @@ const recipes = {
       author: "Vincent Grey",
       title: "Ginger Snaps",
       ingredients: ["ginger", "flour", "butter", "sugar"],
-      image: "https://www.joyofbaking.com/images/facebook/gingersnaps1.jpg",
+      image:
+        "https://image.shutterstock.com/image-photo/this-photo-symbol-internet-cookies-600w-1626058816.jpg",
     },
     {
       type: "biscuits",

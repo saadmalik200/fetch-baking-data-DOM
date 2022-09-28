@@ -6,16 +6,11 @@ import recipes from "./data.js";
 const recipesParsed = JSON.parse(recipes);
 
 // \/ All of your javascript should go here \/
-const cakesSection = document.querySelector("#cakes");
-// console.log("cakesSection", cakesSection);
-const biscuitsSection = document.querySelector("#biscuits");
-const breadSection = document.querySelector("#bread");
+// const cakesSection = document.querySelector("#cakes");
+// // console.log("cakesSection", cakesSection);
+// const biscuitsSection = document.querySelector("#biscuits");
+// const breadSection = document.querySelector("#bread");
 const container = document.querySelector(".container");
-
-// console.log(recipesParsed);
-// console.log(Object.entries(recipesParsed));
-
-// cakesSection.classList.add("justify-content-between");
 
 for (const [key, value] of Object.entries(recipesParsed)) {
   //   console.log(key);
@@ -64,10 +59,7 @@ function createCard(value, key) {
 
     cardContainer.append(img, cardBody);
     cardBody.append(heading, personName, ingredients);
-
+    // body.append(cardContainer);
     container.querySelector(`#${item.type}`).append(cardContainer);
   }
-  //   });
 }
-
-// createCard().then(() => {});
